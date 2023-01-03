@@ -97,6 +97,10 @@ p {
     justify-items: end;
 }
 
+.introducao-cover img {
+    object-fit: cover;
+    height: 100%;
+}
 .botao {
     background: #e21;
     color: #fff;
@@ -143,4 +147,45 @@ p {
 
 .vantagens-item:nth-child(odd) {
     background: #f7f7f7;
+}
+
+@media (max-width: 1000px) {
+    .conteudo-vantagens {
+        grid-template-columns: 1fr;
+    }
+    .subtitulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .header {
+        gap: 30px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+    .introducao {
+        text-align: center;
+        justify-items: center;
+    }
+    .introducao::before {
+        display: none;
+    
+    }
+    .subtitulo {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .subtitulo {
+        font-size: 2rem;
+    }
 }

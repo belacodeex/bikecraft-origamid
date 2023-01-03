@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikecraft</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./js.css">
 </head>
 <body>
     <header class="header">
@@ -31,10 +32,13 @@
 
         </div>
 
+        <div class="introducao-cover">
         <img src="./assets/bicicleta.jpg" alt="bike">
+        </div>
+
         </article>
 
-        <article class="conteudo" aria-labelledby="label-vantagens">
+        <article class="conteudo conteudo-vantagens" aria-labelledby="label-vantagens">
         <h2 class="subtitulo" id="vantagens">Vantagens Bikecraft</h2>
 
         <ul class="vantagens">
@@ -57,6 +61,19 @@
         </article>
     </main>
     
+    
+    <div onclick="openModal()" class="btn">Temos Novidades</div>
+
+    <div id="modal-container" class="modal-container">
+        <div class="modal">
+            <button class="fechar" id="fechar">x</button>
+            <h1>Visite também nossas lojas e faça testes com os modelos desejados</h1>
+            <p>Visitando nossas lojas, você poderá fazer o teste drive do modelo que melhor te captura. Venha e pedale, estamos esperando por você. E agora com a inauguração Bikecraft em Bragança Paulista, no dia 24/01/22 esperamos por você no Garden Shopping a partir das 09 horas. </p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
     <footer class="rodape">
         <p>Alguns direitos reservados.</p>
     </footer>
